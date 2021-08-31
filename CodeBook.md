@@ -56,17 +56,17 @@ unzip("Course3.zip")
 
 6. Appropriately labels the data set with descriptive variable names.
 
--The "label" column in data_set is renamed to "activities"
--All "Acc" in the column's name are replaced by "accelerometer"
--All "Gyro" in the column's name are replaced by "gyroscope"
--All "BodyBody" in the column's name are replaced by "body"
--All "Mag" in the column's name are replaced by "magnitude"
--All "tBody" in the column's name are replaced by "timebody"
--All "Gyro" in the column's name are replaced by "gyroscope"
--All "Gyro" in the column's name are replaced by "gyroscope"
--All "Gyro" in the column's name are replaced by "gyroscope"
--All character starting with "t" are replaced by "time"
--All character starting with "f" are replaced by "frequency"
+- The "label" column in data_set is renamed to "activities"
+- All "Acc" in the column's name are replaced by "accelerometer"
+- All "Gyro" in the column's name are replaced by "gyroscope"
+- All "BodyBody" in the column's name are replaced by "body"
+- All "Mag" in the column's name are replaced by "magnitude"
+- All "tBody" in the column's name are replaced by "timebody"
+- All "Gyro" in the column's name are replaced by "gyroscope"
+- All "Gyro" in the column's name are replaced by "gyroscope"
+- All "Gyro" in the column's name are replaced by "gyroscope"
+- All character starting with "t" are replaced by "time"
+- All character starting with "f" are replaced by "frequency"
 
 
 7. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
