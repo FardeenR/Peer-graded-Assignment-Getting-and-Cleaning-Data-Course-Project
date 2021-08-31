@@ -35,42 +35,42 @@ unzip("Course3.zip")
 
 3. Merge the training and the test sets to create one data set
 
-X is created by merging x_train and x_test using the rbind() function
+  X is created by merging x_train and x_test using the rbind() function
 
-Y is created by merging y_train and y_test using the rbind() function
+  Y is created by merging y_train and y_test using the rbind() function
 
-Subject is created by merging subject_train and subject_test using rbind() function
+  Subject is created by merging subject_train and subject_test using rbind() function
 
-data_merged is created by merging Subject, X and Y using the cbind() function
+  data_merged is created by merging Subject, X and Y using the cbind() function
 
 
 4. Extracts only the measurements on the mean and standard deviation for each measurement
 
-data_set is created from data_merged but only columns "subject", "label" and the mean and standard deviation of the measurements are taken. This is done by subsetting using the select() function
+  data_set is created from data_merged but only columns "subject", "label" and the mean and standard deviation of the measurements are taken. This is done by subsetting using the select() function
 
 
 5. Uses descriptive activity names to name the activities in the data set
 
-The numbers present in "label" column of data_set are replaced with its corresponding value as in the activity_labels variable.
+  The numbers present in "label" column of data_set are replaced with its corresponding value as in the activity_labels variable.
 
 
 6. Appropriately labels the data set with descriptive variable names.
 
-The "label" column in data_set is renamed to "activities"
-All "Acc" in the column's name are replaced by "accelerometer"
-All "Gyro" in the column's name are replaced by "gyroscope"
-All "BodyBody" in the column's name are replaced by "body"
-All "Mag" in the column's name are replaced by "magnitude"
-All "tBody" in the column's name are replaced by "timebody"
-All "Gyro" in the column's name are replaced by "gyroscope"
-All "Gyro" in the column's name are replaced by "gyroscope"
-All "Gyro" in the column's name are replaced by "gyroscope"
-All character starting with "t" are replaced by "time"
-All character starting with "f" are replaced by "frequency"
+-The "label" column in data_set is renamed to "activities"
+-All "Acc" in the column's name are replaced by "accelerometer"
+-All "Gyro" in the column's name are replaced by "gyroscope"
+-All "BodyBody" in the column's name are replaced by "body"
+-All "Mag" in the column's name are replaced by "magnitude"
+-All "tBody" in the column's name are replaced by "timebody"
+-All "Gyro" in the column's name are replaced by "gyroscope"
+-All "Gyro" in the column's name are replaced by "gyroscope"
+-All "Gyro" in the column's name are replaced by "gyroscope"
+-All character starting with "t" are replaced by "time"
+-All character starting with "f" are replaced by "frequency"
 
 
 7. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-TidyData is created by grouping the variables by subject and activity in data_set and taking the means of each variable for each activity and subject.
+  TidyData is created by grouping the variables by subject and activity in data_set and taking the means of each variable for each activity and subject.
 
-TidyData is exported into "FinalDataSet.txt" file
+  TidyData is exported into "FinalDataSet.txt" file
